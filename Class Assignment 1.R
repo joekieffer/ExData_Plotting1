@@ -14,7 +14,7 @@ dev.off()
 
 #Plot 2
 png(file="plo2.png", bg="transparent")
-plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l")
+plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global active power (kilowatts)")
 dev.off()
 
 #plot 3
@@ -30,7 +30,7 @@ dev.off()
 #plot 4
 png(file="plot4.png", bg="transparent")
 par(mfrow=c(2,2))
-plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global active power")
+plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global Active Power")
 plot(as.POSIXct(paste(data$Date, data$Time)),data$Voltage, type="l",xlab="datetime",ylab="Voltage")
 with(data,{
     plot(as.POSIXct(paste(data$Date, data$Time)),data$Sub_metering_1, type="l", col="black",xlab="",ylab="Energy sub metering")

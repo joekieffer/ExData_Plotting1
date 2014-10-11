@@ -17,5 +17,5 @@ data <- vars[get.date,]
  
 #building plot 2
 png(file="plo2.png", bg="transparent")
-plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l")
+plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global active power (kilowatts)")
 dev.off()
