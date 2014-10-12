@@ -13,7 +13,7 @@ hist(as.numeric(as.character(data$Global_active_power)),xlab="Global Active Powe
 dev.off()
 
 #Plot 2
-png(file="plo2.png", bg="transparent")
+png(file="plot2.png", bg="transparent")
 plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global active power (kilowatts)")
 dev.off()
 

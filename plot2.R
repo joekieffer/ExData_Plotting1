@@ -16,6 +16,6 @@ get.date <- vars$Date <= "2007-02-02" & vars$Date > "2007-01-31"
 data <- vars[get.date,]
  
 #building plot 2
-png(file="plo2.png", bg="transparent")
+png(file="plot2.png", bg="transparent")
 plot(as.POSIXct(paste(data$Date, data$Time)),data$Global_active_power, type="l",xlab="",ylab="Global active power (kilowatts)")
 dev.off()
